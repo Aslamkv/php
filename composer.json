@@ -12,18 +12,18 @@
   "authors": [{
     "name": "Aslam",
     "email": "kv.aslam@gmail.com",
-    "role": "developer"
+    "role": "maintainer"
   }],
   "scripts":{
-    "test":"vendor/bin/phpunit --testdox --colors=always --bootstrap vendor/autoload.php tests/"
+    "test":"composer dump-autoload && vendor/bin/phpunit --testdox --colors=always --bootstrap vendor/autoload.php tests/"
   },
   "require": {
     "php": ">=7.2.0",
     "phpunit/phpunit": "^8.5"
   },
   "autoload": {
-    "classmap": [
-      "app"
-    ]
+    "psr-4": {
+      "Example\\": "src/"
+    }
   }
 }

@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
+use Example\App;
 
 final class AppTest extends TestCase{
   public static function setUpBeforeClass(): void{

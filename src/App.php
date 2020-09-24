@@ -1,4 +1,7 @@
 <?php declare(strict_types=1);
+namespace Example;
+
+use Exception;
 
 class App{
   private function is_empty($value){
