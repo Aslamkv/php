@@ -21,8 +21,5 @@
     "psr-4": {
       "Example\\": "src/"
     }
-  },
-  "require": {
-    "phpunit/phpunit": "^9.5"
   }
 }
