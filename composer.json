@@ -17,6 +17,9 @@
     "setup":"composer require phpunit/phpunit",
     "test":"composer dump-autoload && vendor/bin/phpunit --testdox --colors=always --bootstrap vendor/autoload.php tests/"
   },
+  "require": {
+    "php": ">=7.2.0"
+  },
   "autoload": {
     "psr-4": {
       "Example\\": "src/"
