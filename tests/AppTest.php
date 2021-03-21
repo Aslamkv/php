@@ -17,21 +17,6 @@ final class AppTest extends TestCase{
     );
   }
 
-  public function testAppCanGreet(): void{
-    $app=new App();
-    $output=$app->greet("Bob");
-    $this->assertEquals(
-      "Hello, Bob",
-      $output
-    );
-  }
-
-  public function testAppCannotGreetIfNameIsEmpty(): void{
-    $this->expectExceptionMessage('Name cannot be empty!');
-    $app=new App();
-    $app->greet("");
-  }
-
   protected function tearDown():void{
   }
 

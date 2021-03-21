@@ -17,7 +17,7 @@ PHP application boilerplate
 
 3. Install dependencies using composer
 
-> composer install
+> composer run-script setup
 
 4. Run test in terminal
 

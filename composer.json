@@ -1,7 +1,6 @@
 {
   "name": "aslamkv/php",
   "description": "PHP application boilerplate",
-  "version": "1.0.0",
   "type": "library",
   "keywords": [
     "php",
@@ -15,15 +14,15 @@
     "role": "maintainer"
   }],
   "scripts":{
+    "setup":"composer require phpunit/phpunit",
     "test":"composer dump-autoload && vendor/bin/phpunit --testdox --colors=always --bootstrap vendor/autoload.php tests/"
-  },
-  "require": {
-    "php": ">=7.2.0",
-    "phpunit/phpunit": "^8.5"
   },
   "autoload": {
     "psr-4": {
       "Example\\": "src/"
     }
+  },
+  "require": {
+    "phpunit/phpunit": "^9.5"
   }
 }
