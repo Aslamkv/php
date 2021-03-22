@@ -1,26 +1,15 @@
-<?php declare(strict_types=1);
-use PHPUnit\Framework\TestCase;
+<?php
+
+declare(strict_types=1);
+
 use Example\App;
+use PHPUnit\Framework\TestCase;
 
-final class AppTest extends TestCase{
-  public static function setUpBeforeClass(): void{
-  }
-
-  protected function setUp():void{
-  }
-
-  public function testCanCreateApp(): void{
-    $app=new App();
+final class AppTest extends TestCase {
+  public function testCanCreateApp(): void {
     $this->assertInstanceOf(
       App::class,
-      $app
+      new App()
     );
   }
-
-  protected function tearDown():void{
-  }
-
-  public static function tearDownAfterClass():void{
-  }
-
 }
