@@ -2,7 +2,7 @@
 PHP application boilerplate
 
 ### Pre-requisites
-1. PHP >=7.2.0
+1. PHP >=7.4.0
 2. [composer](https://getcomposer.org/download/)
 
 ### Setup
